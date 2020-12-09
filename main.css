@@ -6,7 +6,7 @@ body {
   background-color: rgb(255, 0, 0, 0.9);
 }
 
-.article--header {
+.article--header h2{
   font-size: 20px;
   text-align: center;
 }
