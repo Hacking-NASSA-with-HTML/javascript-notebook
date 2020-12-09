@@ -10,7 +10,7 @@ body {
   margin: 10px;
 }
 
-.highlight {
+.highlight--piece--of--code {
   background-color: #08090a;
   color: #f8f8f3;
   border-radius: 5px;

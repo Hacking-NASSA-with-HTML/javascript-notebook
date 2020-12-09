@@ -23,23 +23,31 @@
     <div class="article--headline">
       <p>How to deploy piece of code as text on site:</p>
       <p>see in the element's inspector inspector</p>
+      <p>HTML code:</p>
     </div>
-    <div class="highlight">
+    <div class="highlight--piece--of--code">
       <pre>
         <code>
-  // in src/App.js
-  import * as React from "react";
-  import { Admin, Resource, ListGuesser } from 'react-admin';
-  import jsonServerProvider from 'ra-data-json-server';
-
-  const dataProvider = jsonServerProvider
-  (
-  'https://jsonplaceholder.typicode.com'
-  );
-  const App = () =>
-  <Admin dataProvider={dataProvider} />;
-
-  export default App;
+    &lt;div class="highlight--piece--of--code"&gt;
+      &lt;pre&gt;
+        &lt;code&gt;
+  ****************************** Your code here *******************************************************************
+        &lt;/code&gt;
+      &lt;/pre&gt;
+    &lt;/div&gt;
+    </code>
+    </pre>
+    </div>
+    <p>CSS code:</p>
+    <div class="highlight--piece--of--code">
+      <pre>
+        <code>
+  .highlight--piece--of--code {
+    background-color: #08090a;
+    color: #f8f8f3;
+    border-radius: 5px;
+    overflow-x: auto;
+  }
         </code>
       </pre>
     </div>
