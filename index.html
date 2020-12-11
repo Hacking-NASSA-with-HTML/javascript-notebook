@@ -2,59 +2,94 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>javascript-notebook</title>
-  <!--<link rel="icon" href="https://rs.school/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript-notebook</title>
+    <!--<link rel="icon" href="https://rs.school/favicon.ico" type="image/x-icon">
   <link rel="shortcut icon" href="https://rs.school/favicon.ico" type="image/x-icon">-->
-  <link rel="apple-touch-icon" sizes="180x180"
-    href="https://hacking-nassa-with-html.github.io/The-functioning-of-JS-buttons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32"
-    href="https://hacking-nassa-with-html.github.io/The-functioning-of-JS-buttons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16"
-    href="https://hacking-nassa-with-html.github.io/The-functioning-of-JS-buttons/favicon-16x16.png">
-  <link rel="manifest" href="https://hacking-nassa-with-html.github.io/The-functioning-of-JS-buttons/site.webmanifest">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" href="main.css">
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="https://hacking-nassa-with-html.github.io/The-functioning-of-JS-buttons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="https://hacking-nassa-with-html.github.io/The-functioning-of-JS-buttons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://hacking-nassa-with-html.github.io/The-functioning-of-JS-buttons/favicon-16x16.png">
+    <link rel="manifest"
+        href="https://hacking-nassa-with-html.github.io/The-functioning-of-JS-buttons/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body id="body">
-  <article class="article">
-    <div class="article--header">
-      <h2>How to deploy a piece of code as text on site:</h2>
-    </div>
-    <div class="article--headline">
-      <p>see in the element's inspector</p>
-      <p>HTML code:</p>
-    </div>
-    <div class="highlight--piece--of--code">
-      <pre>
+    <article class="article">
+        <div class="article--header">
+            <h2>How to deploy a piece of code as text on site:</h2>
+        </div>
+        <div class="article--headline">
+            <p>see in the element's inspector</p>
+            <p>HTML code:</p>
+        </div>
+        <div class="highlight--piece--of--code">
+            <pre>
         <code>
     &lt;div class="highlight--piece--of--code"&gt;
-      &lt;pre&gt;
-        &lt;code&gt;
-  ****************************** Your code here *******************************************************************
-        &lt;/code&gt;
-      &lt;/pre&gt;
+        &lt;pre&gt;
+            &lt;code&gt;
+    ****************************** Your code here *******************************************************************
+            &lt;/code&gt;
+        &lt;/pre&gt;
     &lt;/div&gt;
     </code>
     </pre>
-    </div>
-    <p>CSS code:</p>
-    <div class="highlight--piece--of--code">
-      <pre>
+        </div>
+        <p>CSS code:</p>
+        <div class="highlight--piece--of--code">
+            <pre>
         <code>
-  .highlight--piece--of--code {
-    background-color: #08090a;
-    color: #f8f8f3;
-    border-radius: 5px;
-    overflow-x: auto;
-  }
-        </code>
+    .highlight--piece--of--code {
+        background-color: #08090a;
+        color: #f8f8f3;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+    </code>
       </pre>
-    </div>
-  </article>
-  <script src="script.js"></script>
+        </div>
+    </article>
+    <article class="article">
+        <div class="article--header">
+            <h2>Zhan Zhuridov's Observer. Initial variant:</h2>
+        </div>
+        <div class="article--headline">
+            <p>The second variant is in my GHgists</p>
+        </div>
+        <div class="highlight--piece--of--code">
+            <pre>
+            <code>
+    class Observer{
+        constructor(){
+            this.listeners = [];
+        }
+        addListener(name, callback){
+            let id = {};
+            this.listeners.push({id, name, callback});
+            return id;
+        }
+        addOnceListener(name, callback){
+            let id = {};
+            this.listeners.push({id, name, callback:()=>{
+            callback();
+            this.removeListener(id);
+            }});
+            return id;
+        }
+        removeListener(id){ this.listeners = this.listeners.filter(it=>it.id!=id); }
+        dispatch(name){ this.listeners.filter(it=>it.name==name).forEach(it=>it.callback()); }
+    }
+        </code>
+        </pre>
+        </div>
+    </article>
+    <script src="script.js"></script>
 </body>
 
 </html>
