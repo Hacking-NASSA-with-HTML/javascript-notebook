@@ -4,11 +4,13 @@
 
 ##### See the deployed project [on Github pages](https://hacking-nassa-with-html.github.io/javascript-notebook)
 
-Syntax: Element.insertAdjacentHTML() example: main.js 87
+Syntax: Element.insertAdjacentHTML() 
 
 ```
 insertAdjacentHTML(position, text)
 ```
+
+example: main.js 87
 
 ```
 document.body.insertAdjacentHTML("afterend", mainPageContent())
