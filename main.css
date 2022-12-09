@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-body {
+#body {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
     background-color: rgb(255, 0, 0, 0.9);
 }
 
@@ -16,7 +15,7 @@ body {
 .article {
     font-family: 'Roboto', sans-serif;
     margin: 10px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .article--headline p {
@@ -27,6 +26,7 @@ body {
 }
 
 .highlight--piece--of--code {
+    font-size: 20px;
     background-color: #08090a;
     color: #f8f8f3;
     border-radius: 5px;
