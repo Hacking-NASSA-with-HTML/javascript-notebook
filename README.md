@@ -9,3 +9,5 @@ Element.insertAdjacentHTML() example: main.js 87
 ```
 document.body.insertAdjacentHTML("afterend", mainPageContent())
 ```
+
+more information [on MDN pages](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML)
