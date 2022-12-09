@@ -1,4 +1,6 @@
-# javascript-notebook
+# Javascript notebook.
+
+### JavaScript-notebook :notebook: , different useful "How to", like "How to deploy a piece of code as text on site", "How to add element to body or DOM document's element using JavaScript", and others.
 
 ##### How to deploy a piece of code as text on site:
 
