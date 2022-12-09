@@ -4,7 +4,7 @@ How to deploy a piece of code as text on site:
 
 ##### See the deployed project [on Github pages](https://hacking-nassa-with-html.github.io/javascript-notebook)
 
-How to add element to body or document using JavaScript:
+##### How to add element to body or DOM document using JavaScript:
 
 Syntax: Element.insertAdjacentHTML() 
 
