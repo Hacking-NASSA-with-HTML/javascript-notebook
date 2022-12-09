@@ -4,7 +4,7 @@
 
 ###### See the deployed project [on Github pages](https://hacking-nassa-with-html.github.io/javascript-notebook)
 
-##### How to add element to body or DOM document using JavaScript:
+##### How to add element to body or DOM document's element using JavaScript:
 
 Syntax: Element.insertAdjacentHTML() 
 
