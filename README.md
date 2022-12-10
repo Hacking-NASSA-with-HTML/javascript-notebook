@@ -23,3 +23,22 @@ document.body.insertAdjacentHTML("afterend", mainPageContent())
 more information [on MDN pages](https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML)
 
 and [on Stack Overflow pages](https://stackoverflow.com/questions/15741006/adding-div-element-to-body-or-document-in-javascript)
+
+
+##### How to Convert a function to an arrow function:
+
+```
+const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(function(name) { 
+  return name.toUpperCase();
+});
+```
+
+and arrow function syntax:
+
+```
+const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(
+  name => name.toUpperCase()
+)
+console.log(upperizedNames)
+```
+

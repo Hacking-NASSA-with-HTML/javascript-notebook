@@ -91,3 +91,8 @@ function mainPageContent() {
 }
 
 document.body.insertAdjacentHTML("afterend", mainPageContent())
+
+const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(
+    name => name.toUpperCase()
+)
+console.log(upperizedNames)
