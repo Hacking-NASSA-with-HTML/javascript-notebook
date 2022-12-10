@@ -14,7 +14,7 @@ Syntax: Element.insertAdjacentHTML()
 insertAdjacentHTML(position, text)
 ```
 
-example: main.js 87
+example: main.js 93
 
 ```
 document.body.insertAdjacentHTML("afterend", mainPageContent())
