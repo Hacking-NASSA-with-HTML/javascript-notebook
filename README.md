@@ -44,8 +44,7 @@ const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(
 console.log(upperizedNames)
 ```
 
-
-
+---
 
 function declaration .filter() syntax:
 
