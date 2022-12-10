@@ -76,4 +76,12 @@ const names = ['Afghanistan', 'Aruba', 'Bahamas', 'Chile', 'Fiji', 'Gabon', 'Lux
 const longNamesArrow = names.filter(name => name.length > 6)
 ```
 
+##### Keyword THIS:
 
+With regular functions, the value of This is set based on how the function is called. 
+
+With arrow functions, the value of This is based on the function's surrounding context. 
+
+In other words, the value of This inside an arrow function is the same as the 
+
+value of This outside the function.
