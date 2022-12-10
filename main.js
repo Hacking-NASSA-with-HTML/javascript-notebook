@@ -92,7 +92,20 @@ function mainPageContent() {
 
 document.body.insertAdjacentHTML("afterend", mainPageContent())
 
+// .map with arrow function
 const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(
     name => name.toUpperCase()
 )
 console.log(upperizedNames)
+
+// .filter with ordinary and arrow functions
+const names = ['Afghanistan', 'Aruba', 'Bahamas', 'Chile', 'Fiji', 'Gabon', 'Luxembourg', 'Nepal', 'Singapore', 'Uganda', 'Zimbabwe'];
+
+const longNames = names.filter(function (name) {
+    return name.length > 6;
+});
+
+const longNamesArrow = names.filter(name => name.length > 6)
+console.log(longNames)
+console.log(longNamesArrow)
+

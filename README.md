@@ -27,6 +27,8 @@ and [on Stack Overflow pages](https://stackoverflow.com/questions/15741006/addin
 
 ##### How to Convert a function to an arrow function:
 
+function declaration syntax:
+
 ```
 const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(function(name) { 
   return name.toUpperCase();
@@ -41,4 +43,28 @@ const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(
 )
 console.log(upperizedNames)
 ```
+
+
+
+
+function declaration .filter syntax:
+
+```
+const names = ['Afghanistan', 'Aruba', 'Bahamas', 'Chile', 'Fiji', 'Gabon', 'Luxembourg', 'Nepal', 'Singapore', 'Uganda', 'Zimbabwe'];
+
+const longNames = names.filter(function (name) {
+    return name.length > 6;
+});
+
+console.log(longNames)
+```
+
+and arrow function .filter syntax:
+
+```
+const names = ['Afghanistan', 'Aruba', 'Bahamas', 'Chile', 'Fiji', 'Gabon', 'Luxembourg', 'Nepal', 'Singapore', 'Uganda', 'Zimbabwe'];
+
+const longNamesArrow = names.filter(name => name.length > 6)
+```
+
 
