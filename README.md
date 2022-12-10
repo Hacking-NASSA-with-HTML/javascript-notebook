@@ -78,7 +78,7 @@ const longNamesArrow = names.filter(name => name.length > 6)
 
 ##### Keyword THIS:
 
-With regular functions, the value of This is set based on how the function is called. 
+With regular functions, the value of This is set based on HOW the function is called. 
 
 With arrow functions, the value of This is based on the function's surrounding context. 
 
