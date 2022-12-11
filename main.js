@@ -115,3 +115,11 @@ const squares = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(
 )
 
 console.log(...squares);
+
+function hello(name = 'Visitor', greeting = 'Welcome') {
+    return `${greeting} ${name}!`;
+}
+
+console.log(hello()); // Welcome Visitor!
+console.log(hello('Nikky')); // Welcome Nikky!
+console.log(hello('Jennifer', 'Howdy')); // Howdy Jennifer!

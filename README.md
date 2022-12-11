@@ -135,3 +135,15 @@ or, if in strict mode, it's `undefined`.
 more information on [You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/this%20&%20object%20prototypes/README.md#you-dont-know-js-this--object-prototypes)
 
 and on [You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS/blob/master/README.md)
+
+##### Default function parameters:
+
+```
+function hello(name = 'Visitor', greeting = 'Welcome') {
+  return `${greeting} ${name}!`;
+}
+
+console.log(hello()); // Welcome Visitor!
+console.log(hello('Nikky')); // Welcome Nikky!
+console.log(hello('Jennifer', 'Howdy')); // Howdy Jennifer!
+```
