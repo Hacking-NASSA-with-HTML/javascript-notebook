@@ -100,11 +100,9 @@ console.log(upperizedNames)
 
 // .filter with ordinary and arrow functions
 const names = ['Afghanistan', 'Aruba', 'Bahamas', 'Chile', 'Fiji', 'Gabon', 'Luxembourg', 'Nepal', 'Singapore', 'Uganda', 'Zimbabwe'];
-
 const longNames = names.filter(function (name) {
     return name.length > 6;
 });
-
 const longNamesArrow = names.filter(name => name.length > 6)
 console.log(longNames)
 console.log(longNamesArrow)
@@ -113,7 +111,6 @@ console.log(longNamesArrow)
 const squares = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(
     square => square * square
 )
-
 console.log(...squares);
 
 // default function parameters:
