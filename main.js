@@ -116,6 +116,7 @@ const squares = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(
 
 console.log(...squares);
 
+// default function parameters:
 function hello(name = 'Visitor', greeting = 'Welcome') {
     return `${greeting} ${name}!`;
 }
@@ -123,3 +124,10 @@ function hello(name = 'Visitor', greeting = 'Welcome') {
 console.log(hello()); // Welcome Visitor!
 console.log(hello('Nikky')); // Welcome Nikky!
 console.log(hello('Jennifer', 'Howdy')); // Howdy Jennifer!
+
+// one more example of default function parameters:
+function houseDescriptor([houseColor = 'green', shutterColors = ['red']]) {
+    return `I have a ${houseColor} house with ${shutterColors.join(' and ')} shutters`;
+}
+console.log(houseDescriptor(['green']))
+console.log(houseDescriptor(['green', ['white', 'gray', 'pink']]))
