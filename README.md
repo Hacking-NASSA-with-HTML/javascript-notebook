@@ -162,6 +162,12 @@ class Plane {
     this.enginesActive = true;
   }
 }
+
+var richardsPlane = new Plane(1);
+richardsPlane.startEngines();
+
+var jamesPlane = new Plane(4);
+jamesPlane.startEngines();
 ```
 
 "Old" ES5 "Class" syntax: [Click Me](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/this%20&%20object%20prototypes/README.md#you-dont-know-js-this--object-prototypes)
