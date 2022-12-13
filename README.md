@@ -1,4 +1,5 @@
 ![](https://github.com/Hacking-NASSA-with-HTML/javascript-notebook/blob/main/assets/img/FB_open_graph_1200x630_image.jpg)
+![](assets/img/FB_open_graph_1200x630_image.jpg)
 
 # Javascript notebook.
 
