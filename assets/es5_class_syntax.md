@@ -1,6 +1,6 @@
 ##### ES5 "Class" syntax:  
 
-```
+```js
 function Plane(numEngines) {
   this.numEngines = numEngines
   this.enginesActive = false

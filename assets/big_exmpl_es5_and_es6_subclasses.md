@@ -1,6 +1,6 @@
 ##### Subclasses with "New" es6:
 
-```
+```js
 class Tree {
   constructor(size = '10', leaves = {spring: 'green', summer: 'green', fall: 'orange', winter: null}) {
     this.size = size
@@ -42,7 +42,7 @@ myMaple.changeSeason('spring')
 
 ##### Subclasses with "Old" es5:
 
-```
+```js
 function Tree(size, leaves) {
   this.size = (typeof size === "undefined")? 10 : size
   const defaultLeaves = {spring: 'green', summer: 'green', fall: 'orange', winter: null}
