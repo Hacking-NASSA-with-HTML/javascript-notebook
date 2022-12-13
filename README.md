@@ -170,11 +170,11 @@ var jamesPlane = new Plane(4);
 jamesPlane.startEngines();
 ```
 
-"Old" ES5 "Class" syntax: [Click Me](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/this%20&%20object%20prototypes/README.md#you-dont-know-js-this--object-prototypes)
+"Old" ES5 "Class" syntax: [Click Me](https://github.com/Hacking-NASSA-with-HTML/javascript-notebook/blob/main/assets/es5_class_syntax.md)
 
 Subclasses:
 
-Big example of the "Old" ES5 subclasses' syntax and "New" ES6 subclasses' syntax: [Click Me](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/this%20&%20object%20prototypes/README.md#you-dont-know-js-this--object-prototypes)
+Big example of the "Old" ES5 subclasses' syntax and "New" ES6 subclasses' syntax: [Click Me](https://github.com/Hacking-NASSA-with-HTML/javascript-notebook/blob/main/assets/big_exmpl_es5_and_es6_subclasses.md)
 
 With Static method:
 
