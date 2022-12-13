@@ -136,7 +136,7 @@ console.log(buildHouse()); // Your house has 1 floor(s) with red brick walls.
 console.log(buildHouse({})); // Your house has 1 floor(s) with red brick walls.
 console.log(buildHouse({ floors: 3, color: 'yellow' })); // Your house has 3 floor(s) with yellow brick walls.
 
-// example of es6 classes syntax
+// example of es6 classes and subclasses syntax
 class Vehicle {
     constructor(color = 'blue', wheels = 4, horn = 'beep beep') {
         this.color = color
@@ -158,8 +158,8 @@ class Bicycle extends Vehicle {
     }
 }
 
-const myVehicle = new Vehicle();
-myVehicle.honkHorn(); // beep beep
+const myVehicle = new Vehicle()
+myVehicle.honkHorn() // beep beep
 
-const myBike = new Bicycle();
-myBike.honkHorn(); // honk honk
+const myBike = new Bicycle()
+myBike.honkHorn() // honk honk
