@@ -147,3 +147,21 @@ console.log(hello()); // Welcome Visitor!
 console.log(hello('Nikky')); // Welcome Nikky!
 console.log(hello('Jennifer', 'Howdy')); // Howdy Jennifer!
 ```
+
+##### ES6 Classes syntax:
+
+```
+class Plane {
+  constructor(numEngines) {
+    this.numEngines = numEngines;
+    this.enginesActive = false;
+  }
+
+  startEngines() {
+    console.log('starting engines…');
+    this.enginesActive = true;
+  }
+}
+```
+
+"Old" ES5 "Class" syntax: [Click Me](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/this%20&%20object%20prototypes/README.md#you-dont-know-js-this--object-prototypes)
