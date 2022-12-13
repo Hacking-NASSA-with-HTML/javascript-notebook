@@ -15,13 +15,13 @@
 
 Syntax: Element.insertAdjacentHTML() 
 
-```
+```js
 insertAdjacentHTML(position, text)
 ```
 
 example: main.js 93
 
-```
+```js
 document.body.insertAdjacentHTML("afterend", mainPageContent())
 ```
 
@@ -34,7 +34,7 @@ and [on Stack Overflow pages](https://stackoverflow.com/questions/15741006/addin
 
 function declaration .map() syntax:
 
-```
+```js
 const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(function(name) { 
   return name.toUpperCase()
 })
@@ -42,7 +42,7 @@ const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(function(name) {
 
 and arrow function .map() syntax:
 
-```
+```js
 const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(
   name => name.toUpperCase()
 )
@@ -51,7 +51,7 @@ console.log(upperizedNames)
 
 one more example of arrow .map()
 
-```
+```js
 const squares = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(
     square => square * square
 )
@@ -63,7 +63,7 @@ console.log(...squares)
 
 function declaration .filter() syntax:
 
-```
+```js
 const names = ['Afghanistan', 'Aruba', 'Bahamas', 'Chile', 'Fiji', 'Gabon', 'Luxembourg', 'Nepal', 'Singapore', 'Uganda', 'Zimbabwe']
 
 const longNames = names.filter(function (name) {
@@ -75,7 +75,7 @@ console.log(longNames)
 
 and arrow function .filter() syntax:
 
-```
+```js
 const names = ['Afghanistan', 'Aruba', 'Bahamas', 'Chile', 'Fiji', 'Gabon', 'Luxembourg', 'Nepal', 'Singapore', 'Uganda', 'Zimbabwe']
 
 const longNamesArrow = names.filter(name => name.length > 6)
@@ -97,7 +97,7 @@ value of This outside the function.
 
 1. A new object:
 
-```
+```js
 const mySuperObject = new SuperObject('prop1', ['prop2']) 
 ```
 
@@ -107,7 +107,7 @@ it was called with `new` keyword.
 
 2. A specified object with call/apply:
 
-```
+```js
 const sum = object1.doSomething.call(object2)
 ```
 
@@ -119,7 +119,7 @@ parameter of `call()` is to explicitly set what THIS refers to.
 
 If the function is a method of an object:
 
-```
+```js
 object.coolMethod()
 ```
 
@@ -129,7 +129,7 @@ In the code above, the value of THIS inside `coolMethod()` will refer to `object
 
 If the function is called with no context:
 
-```
+```js
 coolMethod()
 ```
 
@@ -143,7 +143,7 @@ and on [You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS/blob/master
 
 ##### Default function parameters:
 
-```
+```js
 function hello(name = 'Visitor', greeting = 'Welcome') {
   return `${greeting} ${name}!`
 }
@@ -155,7 +155,7 @@ console.log(hello('Jennifer', 'Howdy')) // Howdy Jennifer!
 
 ##### ES6 Classes syntax:
 
-```
+```js
 class Plane {
   constructor(numEngines) {
     this.numEngines = numEngines
@@ -183,7 +183,7 @@ Big example of the "Old" ES5 subclasses' syntax and "New" ES6 subclasses' syntax
 
 With Static method:
 
-```
+```js
 class Plane {
   constructor(numEngines) {
     this.numEngines = numEngines
@@ -205,10 +205,14 @@ class Plane {
 
 and we can use it like
 
-```
+```js
 Plane.badWeather([plane1, plane2])
 ```
 
 directly on `Plane` class.
 
 ![](https://github.com/Hacking-NASSA-with-HTML/Array_iteration_cheatsheet/blob/main/star.gif)
+
+| NOTE: |
+| :--- |
+| Work in progress |
