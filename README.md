@@ -1,3 +1,5 @@
+![](https://github.com/Hacking-NASSA-with-HTML/javascript-notebook/blob/main/assets/img/FB_open_graph_1200x630_image.jpg)
+
 # Javascript notebook.
 
 ## Useful Javascript cheat sheet if you are learning JavaScript from scratch.
@@ -207,3 +209,5 @@ Plane.badWeather([plane1, plane2])
 ```
 
 directly on `Plane` class.
+
+![](https://github.com/Hacking-NASSA-with-HTML/Array_iteration_cheatsheet/blob/main/star.gif)
