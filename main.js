@@ -101,8 +101,8 @@ console.log(upperizedNames)
 // .filter with ordinary and arrow functions
 const names = ['Afghanistan', 'Aruba', 'Bahamas', 'Chile', 'Fiji', 'Gabon', 'Luxembourg', 'Nepal', 'Singapore', 'Uganda', 'Zimbabwe'];
 const longNames = names.filter(function (name) {
-    return name.length > 6;
-});
+    return name.length > 6
+})
 const longNamesArrow = names.filter(name => name.length > 6)
 console.log(longNames)
 console.log(longNamesArrow)
@@ -111,30 +111,30 @@ console.log(longNamesArrow)
 const squares = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(
     square => square * square
 )
-console.log(...squares);
+console.log(...squares)
 
 // default function parameters:
 function hello(name = 'Visitor', greeting = 'Welcome') {
-    return `${greeting} ${name}!`;
+    return `${greeting} ${name}!`
 }
-console.log(hello()); // Welcome Visitor!
-console.log(hello('Nikky')); // Welcome Nikky!
-console.log(hello('Jennifer', 'Howdy')); // Howdy Jennifer!
+console.log(hello()) // Welcome Visitor!
+console.log(hello('Nikky')) // Welcome Nikky!
+console.log(hello('Jennifer', 'Howdy')) // Howdy Jennifer!
 
 // one more example of default function parameters:
 function houseDescriptor([houseColor = 'green', shutterColors = ['red']]) {
-    return `I have a ${houseColor} house with ${shutterColors.join(' and ')} shutters`;
+    return `I have a ${houseColor} house with ${shutterColors.join(' and ')} shutters`
 }
 console.log(houseDescriptor(['green']))
 console.log(houseDescriptor(['green', ['white', 'gray', 'pink']]))
 
 // one more example of default function parameters:
 function buildHouse({ floors = 1, color = 'red', walls = 'brick' } = {}) {
-    return `Your house has ${floors} floor(s) with ${color} ${walls} walls.`;
+    return `Your house has ${floors} floor(s) with ${color} ${walls} walls.`
 }
-console.log(buildHouse()); // Your house has 1 floor(s) with red brick walls.
-console.log(buildHouse({})); // Your house has 1 floor(s) with red brick walls.
-console.log(buildHouse({ floors: 3, color: 'yellow' })); // Your house has 3 floor(s) with yellow brick walls.
+console.log(buildHouse()) // Your house has 1 floor(s) with red brick walls.
+console.log(buildHouse({})) // Your house has 1 floor(s) with red brick walls.
+console.log(buildHouse({ floors: 3, color: 'yellow' })) // Your house has 3 floor(s) with yellow brick walls.
 
 // example of es6 classes and subclasses syntax
 class Vehicle {

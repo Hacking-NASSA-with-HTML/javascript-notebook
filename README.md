@@ -31,8 +31,8 @@ function declaration .map() syntax:
 
 ```
 const upperizedNames = ['Farrin', 'Kagure', 'Asser'].map(function(name) { 
-  return name.toUpperCase();
-});
+  return name.toUpperCase()
+})
 ```
 
 and arrow function .map() syntax:
@@ -51,7 +51,7 @@ const squares = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(
     square => square * square
 )
 
-console.log(...squares);
+console.log(...squares)
 ```
 
 ---
@@ -59,11 +59,11 @@ console.log(...squares);
 function declaration .filter() syntax:
 
 ```
-const names = ['Afghanistan', 'Aruba', 'Bahamas', 'Chile', 'Fiji', 'Gabon', 'Luxembourg', 'Nepal', 'Singapore', 'Uganda', 'Zimbabwe'];
+const names = ['Afghanistan', 'Aruba', 'Bahamas', 'Chile', 'Fiji', 'Gabon', 'Luxembourg', 'Nepal', 'Singapore', 'Uganda', 'Zimbabwe']
 
 const longNames = names.filter(function (name) {
-    return name.length > 6;
-});
+    return name.length > 6
+})
 
 console.log(longNames)
 ```
@@ -71,7 +71,7 @@ console.log(longNames)
 and arrow function .filter() syntax:
 
 ```
-const names = ['Afghanistan', 'Aruba', 'Bahamas', 'Chile', 'Fiji', 'Gabon', 'Luxembourg', 'Nepal', 'Singapore', 'Uganda', 'Zimbabwe'];
+const names = ['Afghanistan', 'Aruba', 'Bahamas', 'Chile', 'Fiji', 'Gabon', 'Luxembourg', 'Nepal', 'Singapore', 'Uganda', 'Zimbabwe']
 
 const longNamesArrow = names.filter(name => name.length > 6)
 ```
@@ -93,7 +93,7 @@ value of This outside the function.
 1. A new object:
 
 ```
-const mySuperObject = new SuperObject('prop1', ['prop2']); 
+const mySuperObject = new SuperObject('prop1', ['prop2']) 
 ```
 
 The value of THIS inside the SuperObject constructor function is a new object because 
@@ -103,7 +103,7 @@ it was called with `new` keyword.
 2. A specified object with call/apply:
 
 ```
-const sum = object1.doSomething.call(object2);
+const sum = object1.doSomething.call(object2)
 ```
 
 The value of THIS inside `doSomething()` will refer to `object2` since the first 
@@ -115,7 +115,7 @@ parameter of `call()` is to explicitly set what THIS refers to.
 If the function is a method of an object:
 
 ```
-object.coolMethod();
+object.coolMethod()
 ```
 
 In the code above, the value of THIS inside `coolMethod()` will refer to `object`.
@@ -125,7 +125,7 @@ In the code above, the value of THIS inside `coolMethod()` will refer to `object
 If the function is called with no context:
 
 ```
-coolMethod();
+coolMethod()
 ```
 
 In the code above, the value of THIS inside `coolMethod()` is either the global object 
@@ -140,12 +140,12 @@ and on [You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS/blob/master
 
 ```
 function hello(name = 'Visitor', greeting = 'Welcome') {
-  return `${greeting} ${name}!`;
+  return `${greeting} ${name}!`
 }
 
-console.log(hello()); // Welcome Visitor!
-console.log(hello('Nikky')); // Welcome Nikky!
-console.log(hello('Jennifer', 'Howdy')); // Howdy Jennifer!
+console.log(hello()) // Welcome Visitor!
+console.log(hello('Nikky')) // Welcome Nikky!
+console.log(hello('Jennifer', 'Howdy')) // Howdy Jennifer!
 ```
 
 ##### ES6 Classes syntax:
@@ -153,21 +153,21 @@ console.log(hello('Jennifer', 'Howdy')); // Howdy Jennifer!
 ```
 class Plane {
   constructor(numEngines) {
-    this.numEngines = numEngines;
-    this.enginesActive = false;
+    this.numEngines = numEngines
+    this.enginesActive = false
   }
 
   startEngines() {
-    console.log('starting engines…');
-    this.enginesActive = true;
+    console.log('starting engines…')
+    this.enginesActive = true
   }
 }
 
-var richardsPlane = new Plane(1);
-richardsPlane.startEngines();
+var richardsPlane = new Plane(1)
+richardsPlane.startEngines()
 
-var jamesPlane = new Plane(4);
-jamesPlane.startEngines();
+var jamesPlane = new Plane(4)
+jamesPlane.startEngines()
 ```
 
 "Old" ES5 "Class" syntax: [Click Me](https://github.com/Hacking-NASSA-with-HTML/javascript-notebook/blob/main/assets/es5_class_syntax.md)
@@ -181,24 +181,24 @@ With Static method:
 ```
 class Plane {
   constructor(numEngines) {
-    this.numEngines = numEngines;
-    this.enginesActive = false;
+    this.numEngines = numEngines
+    this.enginesActive = false
   }
 
   static badWeather(planes) {
     for (plane of planes) {
-      plane.enginesActive = false;
+      plane.enginesActive = false
     }
   }
 
   startEngines() {
-    console.log('starting engines…');
-    this.enginesActive = true;
+    console.log('starting engines…')
+    this.enginesActive = true
   }
 }
 ```
 
-And we can use it like
+and we can use it like
 
 ```
 Plane.badWeather([plane1, plane2])
