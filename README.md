@@ -171,3 +171,37 @@ jamesPlane.startEngines();
 ```
 
 "Old" ES5 "Class" syntax: [Click Me](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/this%20&%20object%20prototypes/README.md#you-dont-know-js-this--object-prototypes)
+
+Subclasses:
+
+Big example of the "Old" ES5 subclasses' syntax and "New" ES6 subclasses' syntax: [Click Me](https://github.com/getify/You-Dont-Know-JS/blob/1st-ed/this%20&%20object%20prototypes/README.md#you-dont-know-js-this--object-prototypes)
+
+With Static method:
+
+```
+class Plane {
+  constructor(numEngines) {
+    this.numEngines = numEngines;
+    this.enginesActive = false;
+  }
+
+  static badWeather(planes) {
+    for (plane of planes) {
+      plane.enginesActive = false;
+    }
+  }
+
+  startEngines() {
+    console.log('starting engines…');
+    this.enginesActive = true;
+  }
+}
+```
+
+And we can use it like
+
+```
+Plane.badWeather([plane1, plane2])
+```
+
+directly on `Plane` class.
