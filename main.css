@@ -2,7 +2,8 @@
 
 #body {
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(255, 0, 0, 0.9);
+    /* background-color: rgb(255, 0, 0, 0.9); */
+    background-color: #5247e7e6;
 }
 
 .article--header h2 {
