@@ -141,6 +141,10 @@ more information on [You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-J
 
 and on [You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS/blob/master/README.md)
 
+also information on [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)
+
+and on [Stack Overflow](https://stackoverflow.com/questions/20279484/how-to-access-the-correct-this-inside-a-callback)
+
 ##### Default function parameters:
 
 ```js
