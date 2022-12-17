@@ -296,10 +296,10 @@ new Promise(function (resolve, reject) {
 })
 ```
 
-We can assign Promise to variable:
+Promise will immediately return an object
 
-```
-const mySundae = new Promise(function (resolve, reject) {
+```js
+const myPromiseObj = new Promise(function (resolve, reject) {
     // sundae creation code
 })
 ```
