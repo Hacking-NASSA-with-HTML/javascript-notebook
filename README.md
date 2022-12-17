@@ -217,6 +217,18 @@ directly on `Plane` class.
 
 ![](https://github.com/Hacking-NASSA-with-HTML/Array_iteration_cheatsheet/blob/main/star.gif)
 
+
+##### The most 'cool' for loop:
+
+```js
+const digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+for (const digit of digits) {
+    console.log(digit);
+}  // prints 0 1 2 3 4 5 6 7 8 9
+```
+
+
 | NOTE: |
 | :--- |
 | Work in progress |
