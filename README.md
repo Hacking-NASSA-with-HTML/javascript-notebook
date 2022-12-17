@@ -324,6 +324,39 @@ mySundae.then(function(sundae) {
 ```
 
 
+##### Proxies syntax:
+
+```js
+const proxyObj = new Proxy({ age: 5, height: 4 }, {
+    get(targetObj, property) {
+        console.log(`getting the ${property} property`);
+        console.log(targetObj[property]);
+    }
+});
+
+proxyObj.age; // logs 'getting the age property' & 5
+proxyObj.height; // logs 'getting the height property' & 4
+proxyObj.weight = 120; // set a new property on the object
+proxyObj.weight; // logs 'getting the weight property' & 120
+```
+
+A proxy object sits between a real object and the calling code. The calling code interacts 
+
+with the proxy instead of the real object. To create a proxy:
+
+1 use the `new Proxy()` constructor
+
+2 pass the object being proxied as the first item
+
+3 the second object is a handler object
+
+4 the handler object is made up of 1 of 13 different "traps"
+
+5 a trap is a function that will intercept calls to properties let you run code
+
+6 if a trap is not defined, the default behavior is sent to the target object
+
+
 | NOTE: |
 | :--- |
 | Work in progress |
