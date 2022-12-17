@@ -184,3 +184,15 @@ myFavoriteFlavors.add("vanilla")
 myFavoriteFlavors.delete("strawberry")
 
 console.log(myFavoriteFlavors)
+
+
+// How to Create a WeakSet:
+const uniqueFlavors = new WeakSet()
+
+const flavor1 = { flavor: 'chocolate' }
+const flavor2 = { flavor: 'orange' }
+
+uniqueFlavors.add(flavor1)
+uniqueFlavors.add(flavor2)
+
+console.log(uniqueFlavors)
