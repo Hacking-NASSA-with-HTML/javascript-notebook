@@ -7,11 +7,11 @@
 
 ### JavaScript-notebook :notebook: , different useful "How to", like "How to deploy a piece of code as text on site", "How to add element to body or DOM document's element using JavaScript", and others.
 
-##### How to deploy a piece of code as text on site:
+### How to deploy a piece of code as text on site:
 
 ###### See the deployed project [on Github pages](https://hacking-nassa-with-html.github.io/javascript-notebook)
 
-##### How to add element to body or DOM document's element using JavaScript:
+### How to add element to body or DOM document's element using JavaScript:
 
 Syntax: Element.insertAdjacentHTML() 
 
@@ -30,7 +30,7 @@ more information [on MDN pages](https://developer.mozilla.org/en-US/docs/Web/API
 and [on Stack Overflow pages](https://stackoverflow.com/questions/15741006/adding-div-element-to-body-or-document-in-javascript)
 
 
-##### How to Convert a function to an arrow function:
+### How to Convert a function to an arrow function:
 
 function declaration .map() syntax:
 
@@ -81,7 +81,7 @@ const names = ['Afghanistan', 'Aruba', 'Bahamas', 'Chile', 'Fiji', 'Gabon', 'Lux
 const longNamesArrow = names.filter(name => name.length > 6)
 ```
 
-##### Keyword THIS:
+### Keyword THIS:
 
 With regular functions, the value of This is set based on HOW the function is called. 
 
@@ -93,7 +93,7 @@ In other words, the value of This inside an arrow function is the same as the
 
 value of This outside the function.
 
-##### How THIS works in a standard function:
+### How THIS works in a standard function:
 
 1. A new object:
 
@@ -145,7 +145,7 @@ also information on [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScrip
 
 and on [Stack Overflow](https://stackoverflow.com/questions/20279484/how-to-access-the-correct-this-inside-a-callback)
 
-##### Default function parameters:
+### Default function parameters:
 
 ```js
 function hello(name = 'Visitor', greeting = 'Welcome') {
@@ -157,7 +157,7 @@ console.log(hello('Nikky')) // Welcome Nikky!
 console.log(hello('Jennifer', 'Howdy')) // Howdy Jennifer!
 ```
 
-##### ES6 Classes syntax:
+### ES6 Classes syntax:
 
 ```js
 class Plane {
@@ -215,10 +215,8 @@ Plane.badWeather([plane1, plane2])
 
 directly on `Plane` class.
 
-![](https://github.com/Hacking-NASSA-with-HTML/Array_iteration_cheatsheet/blob/main/star.gif)
 
-
-##### The most 'cool' for loop:
+### The most 'cool' for loop:
 
 ```js
 const digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -228,7 +226,7 @@ for (const digit of digits) {
 }  // prints 0 1 2 3 4 5 6 7 8 9
 ```
 
-##### How to Create a Set:
+### How to Create a Set:
 
 ```js
 const myFavoriteFlavors = new Set()
@@ -263,7 +261,7 @@ Use the `.values()` method to return the values in a Set.
 
 `console.log(months.values())`
 
-##### How to Create a WeakSet:
+### How to Create a WeakSet:
 
 ```
 const uniqueFlavors = new WeakSet()
@@ -278,7 +276,7 @@ console.log(uniqueFlavors)
 ```
 
 
-##### How to Create a Promises:
+### How to Create a Promises:
 
 ```js
 new Promise(function (resolve, reject) {
@@ -324,7 +322,7 @@ mySundae.then(function(sundae) {
 ```
 
 
-##### Proxies syntax:
+### Proxies syntax:
 
 ```js
 const proxyObj = new Proxy({ age: 5, height: 4 }, {
@@ -361,4 +359,4 @@ with the proxy instead of the real object. To create a proxy:
 | :--- |
 | Work in progress |
 
-
+![](https://github.com/Hacking-NASSA-with-HTML/Array_iteration_cheatsheet/blob/main/star.gif)
