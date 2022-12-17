@@ -171,3 +171,16 @@ const digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 for (const digit of digits) {
     console.log(digit);
 }  // prints 0 1 2 3 4 5 6 7 8 9
+
+
+// How to Create a Set:
+const myFavoriteFlavors = new Set()
+
+myFavoriteFlavors.add("chocolate chip")
+myFavoriteFlavors.add("cookies and cream")
+myFavoriteFlavors.add("strawberry")
+myFavoriteFlavors.add("vanilla")
+
+myFavoriteFlavors.delete("strawberry")
+
+console.log(myFavoriteFlavors)

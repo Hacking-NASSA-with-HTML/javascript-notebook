@@ -228,7 +228,44 @@ for (const digit of digits) {
 }  // prints 0 1 2 3 4 5 6 7 8 9
 ```
 
+##### How to Create a Set:
+
+```js
+const myFavoriteFlavors = new Set()
+
+myFavoriteFlavors.add("chocolate chip")
+myFavoriteFlavors.add("cookies and cream")
+myFavoriteFlavors.add("strawberry")
+myFavoriteFlavors.add("vanilla")
+
+myFavoriteFlavors.delete("strawberry")
+
+console.log(myFavoriteFlavors)
+```
+
+Set also has methods like `.add()` and `.delete()`,
+
+Use the .has() method to check if an item exists in a Set.
+
+`console.log(months.has('September'))` 
+
+If the item is in the Set, then `.has()` will return `true`. If the item doesn’t exist in 
+
+the Set, then `.has()` will return `false`.
+
+to delete all the items from a Set, you can use the `.clear()` method.
+
+Use the `.size` property to return the number of items in a Set,
+
+instead of `.length` property to get the size of the Set.
+
+Use the `.values()` method to return the values in a Set.
+
+`console.log(months.values())`
+
 
 | NOTE: |
 | :--- |
 | Work in progress |
+
+
