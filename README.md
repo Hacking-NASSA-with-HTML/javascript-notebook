@@ -296,6 +296,33 @@ new Promise(function (resolve, reject) {
 })
 ```
 
+We can assign Promise to variable:
+
+```
+const mySundae = new Promise(function (resolve, reject) {
+    // sundae creation code
+})
+```
+
+That object has a `.then()` method on it that we can use to have it notify us if the
+
+request we made in the promise was either successful or failed. The `.then()` method 
+ 
+takes two functions:
+
+1. the function to run if the request completed successfully
+
+2. the function to run if the request failed to complete
+
+```js
+mySundae.then(function(sundae) {
+    console.log(`Time to eat my delicious ${sundae}`)
+}, function(msg) {
+    console.log(msg)
+    self.goCry()
+})
+```
+
 
 | NOTE: |
 | :--- |
