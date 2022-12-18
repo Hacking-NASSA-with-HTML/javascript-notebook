@@ -355,6 +355,15 @@ with the proxy instead of the real object. To create a proxy:
 6 if a trap is not defined, the default behavior is sent to the target object
 
 
+### How to do destructuring of the array:
+
+```js
+const things = ['red', 'basketball', 'paperclip', 'green', 'computer', 'earth', 'blue', 'dogs']
+const [one, , , two, , , , three] = things
+console.log(one, two, three) // prints red green dogs
+```
+
+
 | NOTE: |
 | :--- |
 | Work in progress |

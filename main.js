@@ -211,3 +211,9 @@ proxyObj.age; // logs 'getting the age property' & 5
 proxyObj.height; // logs 'getting the height property' & 4
 proxyObj.weight = 120; // set a new property on the object
 proxyObj.weight; // logs 'getting the weight property' & 120
+
+
+// Destructuring of the array
+const things = ['red', 'basketball', 'paperclip', 'green', 'computer', 'earth', 'blue', 'dogs']
+const [one, , , two, , , , three] = things
+console.log(one, two, three)  // prints red green dogs
