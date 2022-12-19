@@ -219,10 +219,13 @@ const [one, , , two, , , , three] = things
 console.log(one, two, three)  // prints red green dogs
 
 
-// How to use the spread operator syntax:
+// How to use the Spread operator syntax:
 const fruits = ["apples", "bananas", "pears"]
 const vegetables = ["corn", "potatoes", "carrots"]
 
 const produce = [...fruits, ...vegetables]
 // prints ['apples', 'bananas', 'pears', 'corn', 'potatoes', 'carrots']
 console.log(produce)
+
+
+// How to use the Rest operator syntax:

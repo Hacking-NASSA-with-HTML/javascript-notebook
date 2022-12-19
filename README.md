@@ -364,7 +364,7 @@ console.log(one, two, three) // prints red green dogs
 ```
 
 
-### How to use the spread operator syntax:
+### How to use the Spread operator syntax:
 
 ```js
 const fruits = ["apples", "bananas", "pears"]
