@@ -217,3 +217,12 @@ proxyObj.weight; // logs 'getting the weight property' & 120
 const things = ['red', 'basketball', 'paperclip', 'green', 'computer', 'earth', 'blue', 'dogs']
 const [one, , , two, , , , three] = things
 console.log(one, two, three)  // prints red green dogs
+
+
+// How to use the spread operator syntax:
+const fruits = ["apples", "bananas", "pears"]
+const vegetables = ["corn", "potatoes", "carrots"]
+
+const produce = [...fruits, ...vegetables]
+// prints ['apples', 'bananas', 'pears', 'corn', 'potatoes', 'carrots']
+console.log(produce)
