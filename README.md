@@ -56,7 +56,7 @@ const squares = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(
     square => square * square
 )
 
-console.log(...squares)
+console.log(...squares)  // works without ... too. Why?
 ```
 
 ---
@@ -373,6 +373,16 @@ const vegetables = ["corn", "potatoes", "carrots"]
 const produce = [...fruits, ...vegetables]
 // prints ['apples', 'bananas', 'pears', 'corn', 'potatoes', 'carrots']
 console.log(produce)
+```
+
+
+### How to use the Rest operator syntax:
+
+```js
+const order = [20.17, 18.67, 1.50, "cheese", "eggs", "milk", "bread"]
+const [total, subtotal, tax, ...items] = order
+// prints 20.17 18.67 1.5 ['cheese', 'eggs', 'milk', 'bread']
+console.log(total, subtotal, tax, items)
 ```
 
 

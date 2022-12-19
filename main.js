@@ -111,7 +111,7 @@ console.log(longNamesArrow)
 const squares = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(
     square => square * square
 )
-console.log(...squares)
+console.log(...squares) // works without ... too. Why?
 
 // default function parameters:
 function hello(name = 'Visitor', greeting = 'Welcome') {
@@ -135,6 +135,7 @@ function buildHouse({ floors = 1, color = 'red', walls = 'brick' } = {}) {
 console.log(buildHouse()) // Your house has 1 floor(s) with red brick walls.
 console.log(buildHouse({})) // Your house has 1 floor(s) with red brick walls.
 console.log(buildHouse({ floors: 3, color: 'yellow' })) // Your house has 3 floor(s) with yellow brick walls.
+
 
 // example of es6 classes and subclasses syntax
 class Vehicle {
@@ -198,7 +199,6 @@ uniqueFlavors.add(flavor2)
 console.log(uniqueFlavors)
 
 
-
 // Proxies syntax:
 const proxyObj = new Proxy({ age: 5, height: 4 }, {
     get(targetObj, property) {
@@ -213,7 +213,7 @@ proxyObj.weight = 120; // set a new property on the object
 proxyObj.weight; // logs 'getting the weight property' & 120
 
 
-// Destructuring of the array
+// Destructuring of the array syntax:
 const things = ['red', 'basketball', 'paperclip', 'green', 'computer', 'earth', 'blue', 'dogs']
 const [one, , , two, , , , three] = things
 console.log(one, two, three)  // prints red green dogs
@@ -229,3 +229,7 @@ console.log(produce)
 
 
 // How to use the Rest operator syntax:
+const order = [20.17, 18.67, 1.50, "cheese", "eggs", "milk", "bread"]
+const [total, subtotal, tax, ...items] = order
+// prints 20.17 18.67 1.5 ['cheese', 'eggs', 'milk', 'bread']
+console.log(total, subtotal, tax, items)
