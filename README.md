@@ -363,6 +363,8 @@ const [one, , , two, , , , three] = things
 console.log(one, two, three) // prints red green dogs
 ```
 
+more information on [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
+
 
 ### How to use the Spread operator syntax:
 
