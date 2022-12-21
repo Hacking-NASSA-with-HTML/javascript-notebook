@@ -400,6 +400,16 @@ console.log("Up up\n\tdown down")  // \n newline \t	tab \"	'' (double quote)
 Cool example of the Conditionals syntax: [Click Me](https://github.com/Hacking-NASSA-with-HTML/javascript-notebook/blob/main/assets/conditionals_exmpl.md)
 
 
+### How to write Ternary operator syntax:
+
+```js
+// conditional ? (if condition is true) : (if condition is false)
+let isWinter = true
+let bgColor = isWinter ? 'white' : 'grey'
+console.log(bgColor)  // prints white
+```
+
+
 | NOTE: |
 | :--- |
 | Work in progress |

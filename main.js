@@ -239,3 +239,10 @@ console.log(total, subtotal, tax, items)
 console.log("Up up\n\tdown down")  // \n newline \t	tab \"	'' (double quote)
 // prints: Up up
 // prints:   down down       // \\	\ (backslash)
+
+
+// How to write Ternary operator syntax:
+// conditional ? (if condition is true) : (if condition is false)
+let isWinter = true
+let bgColor = isWinter ? 'white' : 'grey'
+console.log(bgColor)  // prints white
