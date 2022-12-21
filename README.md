@@ -388,6 +388,15 @@ console.log(total, subtotal, tax, items)
 ```
 
 
+### How to use different special characters inside String:
+
+```js
+console.log("Up up\n\tdown down")  // \n newline \t	tab \"	'' (double quote)
+// prints: Up up
+// prints:   down down       // \\	\ (backslash)
+```
+
+
 | NOTE: |
 | :--- |
 | Work in progress |

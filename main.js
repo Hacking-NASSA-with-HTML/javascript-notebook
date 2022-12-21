@@ -233,3 +233,9 @@ const order = [20.17, 18.67, 1.50, "cheese", "eggs", "milk", "bread"]
 const [total, subtotal, tax, ...items] = order
 // prints 20.17 18.67 1.5 ['cheese', 'eggs', 'milk', 'bread']
 console.log(total, subtotal, tax, items)
+
+
+// How to use different special characters inside String:
+console.log("Up up\n\tdown down")  // \n newline \t	tab \"	'' (double quote)
+// prints: Up up
+// prints:   down down       // \\	\ (backslash)
