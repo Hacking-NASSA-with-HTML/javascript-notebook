@@ -269,4 +269,7 @@ switch (yourChoice) {
     case 3:
         console.log("You choose 3.")
         break
+    default:
+        console.log("something went wrong")
 }   //  prints You choose 2.
+// prints something went wrong if yourChoice = 4
