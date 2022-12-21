@@ -6,7 +6,7 @@ let checkBalance = true
 let isActive = true
 ```
 
-Start only if checkBalance === true
+Starts only if checkBalance === true :
 
 ```js
 if (checkBalance === true) {
