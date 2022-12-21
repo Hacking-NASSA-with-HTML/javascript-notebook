@@ -444,11 +444,19 @@ switch (yourChoice) {
 ```
 
 
-### How to ADD elements to array syntax:
+### How to ADD element to array syntax:
 
 ```js
-unshift() // adds element to the Start of array
-push() // adds element to the End of array
+unshift() // ADDS element to the Start of array
+push() // ADDS element to the End of array
+```
+
+
+### How to REMOVE element from an array syntax:
+
+```js
+shift() // REMOVES the First element from an array
+pop() // REMOVES  the Last element from an array
 ```
 
 
