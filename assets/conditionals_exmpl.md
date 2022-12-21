@@ -29,3 +29,19 @@ else {
   console.log("Thank you. Have a nice day!")
 }
 ```
+
+Example 2:
+
+```js
+let flavor = "chocolate"
+let vessel = "cone"
+let toppings = "sprinkles"
+```
+
+console.logging only if all below is true:
+
+```js
+if ((flavor === "vanilla" || flavor === "chocolate") && (vessel === "cone" || vessel === "bowl") && (toppings === "sprinkles" || toppings === "peanuts")){
+        console.log ("I'd like two scoops of " + flavor + " ice cream in a " + vessel + " with " + toppings + ".")
+}
+```
