@@ -241,8 +241,16 @@ console.log("Up up\n\tdown down")  // \n newline \t	tab \"	'' (double quote)
 // prints:   down down       // \\	\ (backslash)
 
 
-// How to write Ternary operator syntax:
+// How to write Ternary Operator syntax:
 // conditional ? (if condition is true) : (if condition is false)
 let isWinter = true
 let bgColor = isWinter ? 'white' : 'grey'
 console.log(bgColor)  // prints white
+
+// Complex Ternary Operator syntax:
+let eatsPlants = false
+let eatsAnimals = true
+let kind = eatsPlants
+    ? (eatsAnimals ? "omnivore" : "herbivore")
+    : (eatsAnimals ? "carnivore" : "undefined")
+console.log(kind)  // prints carnivore
