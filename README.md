@@ -444,6 +444,14 @@ switch (yourChoice) {
 ```
 
 
+### How to ADD elements to array syntax:
+
+```js
+unshift() // adds element to the Start of array
+push() // adds element to the End of array
+```
+
+
 | NOTE: |
 | :--- |
 | Work in progress |
