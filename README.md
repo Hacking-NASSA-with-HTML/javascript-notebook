@@ -397,6 +397,9 @@ console.log("Up up\n\tdown down")  // \n newline \t	tab \"	'' (double quote)
 ```
 
 
+Cool example of the Conditionals syntax: [Click Me](https://github.com/Hacking-NASSA-with-HTML/javascript-notebook/blob/main/assets/conditionals_exmpl.md)
+
+
 | NOTE: |
 | :--- |
 | Work in progress |
