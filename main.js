@@ -254,3 +254,19 @@ let kind = eatsPlants
     ? (eatsAnimals ? "omnivore" : "herbivore")
     : (eatsAnimals ? "carnivore" : "undefined")
 console.log(kind)  // prints carnivore
+
+
+// How to write a Break Statement syntax:
+let yourChoice = 2
+
+switch (yourChoice) {
+    case 1:
+        console.log("You choose 1.")
+        break
+    case 2:
+        console.log("You choose 2.")
+        break
+    case 3:
+        console.log("You choose 3.")
+        break
+}   //  prints You choose 2.
