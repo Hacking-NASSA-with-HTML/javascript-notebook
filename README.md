@@ -332,7 +332,7 @@ new Promise(function (resolve) {
 
 Promise Example in HTML rendering:
 
-```
+```js
 // Promise Example in HTML rendering:
 let milliseconds = 3000
 wait(milliseconds).then(finish)
