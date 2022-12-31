@@ -199,6 +199,16 @@ uniqueFlavors.add(flavor2)
 console.log(uniqueFlavors)
 
 
+// How to Create a Promise:
+new Promise(function (resolve) {
+    console.log('first')
+    resolve()
+    console.log('second')
+}).then(function () {
+    console.log('third')
+})
+
+
 // Proxies syntax:
 const proxyObj = new Proxy({ age: 5, height: 4 }, {
     get(targetObj, property) {

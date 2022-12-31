@@ -275,7 +275,6 @@ uniqueFlavors.add(flavor2)
 console.log(uniqueFlavors)
 ```
 
-
 ### How to Create a Promises:
 
 ```js
@@ -318,6 +317,16 @@ mySundae.then(function(sundae) {
 }, function(msg) {
     console.log(msg)
     self.goCry()
+})
+```
+
+```
+new Promise(function (resolve) {
+    console.log('first')
+    resolve()
+    console.log('second')
+}).then(function () {
+    console.log('third')
 })
 ```
 
