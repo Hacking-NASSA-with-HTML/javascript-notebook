@@ -327,7 +327,7 @@ new Promise(function (resolve) {
     console.log('second')
 }).then(function () {
     console.log('third')
-})
+})   // prints first second third
 ```
 
 
