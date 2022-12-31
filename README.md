@@ -320,7 +320,7 @@ mySundae.then(function(sundae) {
 })
 ```
 
-```
+```js
 new Promise(function (resolve) {
     console.log('first')
     resolve()
