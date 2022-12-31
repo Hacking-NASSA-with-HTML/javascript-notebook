@@ -330,6 +330,31 @@ new Promise(function (resolve) {
 })   // prints first second third
 ```
 
+Promise Example in HTML rendering:
+
+```
+// Promise Example in HTML rendering:
+let milliseconds = 3000
+wait(milliseconds).then(finish)
+
+function wait(ms) {
+    return new Promise(function (resolve) {
+        console.log(this)
+        window.setTimeout(function () {
+            resolve()
+        }, ms)
+    })
+}
+
+function finish() {
+    let completion = document.querySelector('.completion')
+    completion.innerText = "Completed after " + milliseconds
+        + " ms."
+}  // prints 'Completed after 3000 ms.' in HTML rendering
+// instead of 'Not yet' in <p class="completion">Not yet</p>
+// after 3 seconds
+```
+
 
 ### Proxies syntax:
 
