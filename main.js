@@ -85,6 +85,10 @@ function mainPageContent() {
                         </pre>
                     </div>
                 </article>
+                <div class="article--header article--headline">
+                    <h2>Did the Promise finish?</h2>
+                    <p class="completion">Not yet</p>
+                </div>
             </main>
         `
     return renderMainPageContent
@@ -207,6 +211,26 @@ new Promise(function (resolve) {
 }).then(function () {
     console.log('third')
 })  // prints first second third
+
+
+// Promise Example in HTML rendering:
+let milliseconds = 3000
+wait(milliseconds).then(finish)
+
+function wait(ms) {
+    return new Promise(function (resolve) {
+        console.log(this)
+        window.setTimeout(function () {
+            resolve()
+        }, ms)
+    })
+}
+
+function finish() {
+    let completion = document.querySelector('.completion')
+    completion.innerText = "Completed after " + milliseconds
+        + " ms."
+}
 
 
 // Proxies syntax:
